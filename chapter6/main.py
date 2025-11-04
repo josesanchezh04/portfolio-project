@@ -44,7 +44,7 @@ def get_db():
 
 @app.get("/")
 async def root():
-    return {"message": "API health check successful"}
+    return {"message": "API health check successful: status succesfull"}
 
 
 @app.get("/v0/players/", response_model=list[schemas.Player], tags=['Player'])
